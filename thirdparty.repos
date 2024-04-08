@@ -1,0 +1,5 @@
+repositories:
+  ThirdParty/aws-robomaker-small-house-world:
+    type: git
+    url: https://github.com/javizqh/aws-robomaker-small-house-world.git
+    version: ros2-humble-fortress
