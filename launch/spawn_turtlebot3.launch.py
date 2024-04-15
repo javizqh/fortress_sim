@@ -82,6 +82,13 @@ def generate_launch_description():
         output='screen',
     )
 
+    start_gazebo_ros_depth_bridge_cmd = Node(
+        package='ros_gz_image',
+        executable='image_bridge',
+        arguments=['/camera/depth'],
+        output='screen',
+    )
+
     ld = LaunchDescription()
 
     # Declare the launch options
@@ -92,5 +99,6 @@ def generate_launch_description():
     ld.add_action(start_gazebo_ros_spawner_cmd)
     ld.add_action(start_gazebo_ros_bridge_cmd)
     ld.add_action(start_gazebo_ros_image_bridge_cmd)
+    ld.add_action(start_gazebo_ros_depth_bridge_cmd)
 
     return ld
