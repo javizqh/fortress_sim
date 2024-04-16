@@ -153,15 +153,10 @@
             </horizontal>
           </scan>
           <range>
-            <min>0.120000</min>
+            <min>0.20000</min>
             <max>3.5</max>
             <resolution>0.015000</resolution>
           </range>
-          <noise>
-            <type>gaussian</type>
-            <mean>0.0</mean>
-            <stddev>0.01</stddev>
-          </noise>
         </lidar>
       </sensor>
     </link>
